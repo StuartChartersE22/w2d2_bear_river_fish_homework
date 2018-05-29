@@ -15,4 +15,8 @@ class River
     @fishes.push(fish_to_add)
   end
 
+  def add_many_fishes(array_of_fishes)
+    @fishes.concat(array_of_fishes)
+  end
+
 end
