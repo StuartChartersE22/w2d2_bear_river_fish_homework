@@ -7,4 +7,8 @@ class Bear
     @stomach = []
   end
 
+  def amount_in_stomach()
+    return @stomach.length()
+  end
+
 end
