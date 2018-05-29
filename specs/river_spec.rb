@@ -33,8 +33,16 @@ class RiverTest < MiniTest::Test
     fishes = [@fish1,@fish2]
     @river1.add_many_fishes(fishes)
     removed_fish = @river1.remove_specific_fish("Joe")
-    assert_equal(1, @river1.number_of_fishes)
+    assert_equal(1, @river1.number_of_fishes())
     assert_equal("Joe", removed_fish.name())
+  end
+
+  def test_remove_a_fish
+    fishes = [@fish1,@fish2]
+    @river1.add_many_fishes(fishes)
+    removed_fish = @river1.remove_fish()
+    assert_equal(1, @river1.number_of_fishes())
+    assert_equal(Fish, removed_fish.class())
   end
 
 end
