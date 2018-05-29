@@ -11,4 +11,8 @@ class River
     return @fishes.length()
   end
 
+  def add_fish(fish_to_add)
+    @fishes.push(fish_to_add)
+  end
+
 end
