@@ -19,4 +19,10 @@ class River
     @fishes.concat(array_of_fishes)
   end
 
+  def remove_specific_fish(name)
+    for fish in @fishes
+      return @fishes.delete(fish) if fish.name() == name
+    end
+  end
+
 end

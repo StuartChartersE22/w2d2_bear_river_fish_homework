@@ -11,4 +11,7 @@ class Bear
     return @stomach.length()
   end
 
+  def eat(food)
+    @stomach.push(food)
+  end
 end
