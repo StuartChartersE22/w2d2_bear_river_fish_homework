@@ -1,6 +1,7 @@
 class River
 
   attr_reader(:name)
+  attr_reader(:fishes)
 
   def initialize(name)
     @name = name
@@ -27,7 +28,7 @@ class River
 
   def remove_fish()
     random_order = @fishes.shuffle()
-    return @fishes.pop()
+    return random_order.pop()
   end
 
 end
