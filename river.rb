@@ -1,7 +1,8 @@
 class River
 
   attr_reader(:name)
-  attr_reader(:fishes)
+  ##remove comment if bear has method catch_and_eat_fish
+  #attr_reader(:fishes)
 
   def initialize(name)
     @name = name
