@@ -28,8 +28,7 @@ class River
   end
 
   def remove_fish()
-    random_order = @fishes.shuffle()
-    return random_order.pop()
+    return @fishes.pop()
   end
 
 end
